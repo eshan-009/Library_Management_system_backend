@@ -10,7 +10,11 @@ app.use(cors());
 dbconnect();
 
 app.use("/api",books);
-
+app.get("/",(req,res)=>{
+    res.json({
+        message: "Server Started"
+    })
+})
 app.listen(PORT,()=>{
     console.log(`Server Started Successfully at ${PORT}`);
 })
