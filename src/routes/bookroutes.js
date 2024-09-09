@@ -1,8 +1,9 @@
 const express = require("express");
 const { postBook } = require("../controllers/postBook");
-const { getBook } = require("../controllers/getbooks");
+const { getBook } = require("../controllers/getBook");
 const { updateBook, updateStatus } = require("../controllers/updateBook");
 const { deleteBook } = require("../controllers/deleteBook");
+
 const router = express.Router();
 
 router.post("/",postBook);
